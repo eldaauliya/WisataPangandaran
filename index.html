@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beberapa wisata pantai di Pangandaran</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/LOGO.png" /></a>
+        <div class="nav-link" id="navlink">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">DESKRIPSI WISATA</a></li>
+            <li><a href="course.html">ABOUT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Wisata Pantai Pangandaran</h1>
+        <p>Potensi terbesar yang dimiliki kabupaten Pangandaran adalah pariwisata baik objek wisata pantai maupun sungai.<br />Terdapat banyak objek wisata favorit baik oleh turis mancanegara maupun domestik</p>
+      </div>
+    </section>
+
+    <!-- campus -->
+    <section class="campus">
+      <h1>Photos Of Beach Toursim In Pangandaran</h1>
+      <p>Natural and beutiful beach</p>
+
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/pantai pangandaran.png" />
+          <div class="layer">
+            <h3>PANTAI PANGANDARAN</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/pantai karapyak.jpg" />
+          <div class="layer">
+            <h3>PANTAI KARAPYAK</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/batu karas.jpg" />
+          <div class="layer">
+            <h3>PANTAI BATU KARAS</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images/pantai madasari.jpg" />
+          <div class="layer">
+            <h3>PANTAI MADASARI</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/karang-nini-beach.jpg" />
+          <div class="layer">
+            <h3>PANTAI KARANG NINI</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images/btuhiu.jpg" />
+          <div class="layer">
+            <h3>PANTAI BATU HIU</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------JavaScript for Toggle Menu------->
+    <script>
+      var navlink = document.getElementById('navlink');
+
+      function showMenu() {
+        navlink.style.right = '0';
+      }
+      function hideMenu() {
+        navlink.style.right = '-200px';
+      }
+    </script>
+  </body>
+</html>
